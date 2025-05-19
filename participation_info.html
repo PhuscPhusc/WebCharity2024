@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Run For The Hearts</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="program_event.html">Program Event</a></li>
+            <li><a href="general_information.html">General Information</a></li>
+            <li><a href="participation_info.html" class="active">Participation Information</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="inquiry_form.html">Inquiry Form</a></li>
+        </ul>
+    </nav>
+    <main>
+            <!-- Phần chào mừng đầu trang -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <br> Charity Run 2024</h1>
+                <p>Join us at Saigon Exhibition and Convention Center (SECC) on <strong>11<sup>th</sup> October 2024</strong>.</p>
+            </div>
+        </section>
+        <section class="participation-wrapper">
+            <!-- Lệ phí -->
+            <section class="participation-fee">
+                <h2>💸 Participation Fee</h2>
+                <table>
+                    <tr>
+                        <th>Distance</th>
+                        <th>Fees</th>
+                    </tr>
+                    <tr>
+                        <td>5km</td>
+                        <td>500.000VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>10km</td>
+                        <td>1.000.000VNĐ</td>
+                    </tr>
+                    <tr>
+                        <td>21km</td>
+                        <td>1.800.000VNĐ</td>
+                    </tr>
+                </table>
+            </section>
+            <!-- Phần Form -->
+            <section class="participation-form">
+                <h2>Let's Join</h2>
+                <form class="form" id="form">
+                    <input type="text" id="name" placeholder="Name"/>
+                    <input type="email" id="email" placeholder="Email"/>
+                    <input type="tel" id="phone" placeholder="Phone Number"/>
+                    <input type="text" id="transaction" placeholder="Transaction ID"/>
+
+                    <section class="role-form">
+                        <label><input type="radio" name="role-form" value="runner"/> Runner</label>
+                        <label><input type="radio" name="role-form" value="volunteer"/> Volunteer</label>
+                        <label><input type="radio" name="role-form" value="sponsor"/> Sponsor</label>
+                    </section>
+
+                    <button type="submit"> Submit</button>
+                </form>
+            </section>
+            <script src="script-participation.js"></script>
+        </section>
+    </main>
+
+     <!-- Phần footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="about_us.html" class="contact-button">Contact Us</a>
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+
+        <hr>
+        <p class="copyright">Copyright 2024 SECC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

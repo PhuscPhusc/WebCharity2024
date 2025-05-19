@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Run For The Hearts</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--menu-->
+   <nav>
+      <ul class="menu">
+         <li><a href="home.html">Home</a></li>
+         <li><a href="program_event.html">Program Event</a></li>
+         <li><a href="general_information.html">General Information</a></li>
+         <li><a href="participation_info.html">Participation Information</a></li>
+         <li><a href="about_us.html">About Us</a></li>
+         <li><a href="inquiry_form.html" class="active">Inquiry Form</a></li>
+      </ul>
+   </nav>
+   <main>
+        <!-- Phần chào mừng đầu trang -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to <br> Charity Run 2024</h1>
+                <p>Join us at Saigon Exhibition and Convention Center (SECC) on <strong>11<sup>th</sup> October 2024</strong>.</p>
+            </div>
+        </section>
+        <!-- Form đăng ký -->
+        <form class="inquiry-form" id="inquiry-form">
+            <h2>Event Inquiry Form</h2>
+            <!-- Name -->
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" />
+            <section class="error" id="nameError"></section>
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <section class="error" id="emailError"></section>
+            <!-- Choice -->
+            <label for="event">Interested Event:</label>
+            <select id="event" name="event">
+                <option value="">Select Your Interested Event</option>
+                <option value="5km">5km</option>
+                <option value="10km">10km</option>
+                <option value="21km">21km</option>
+            </select>
+            <section class="error" id="eventError"></section>
+
+            <!-- Category of Enquiry -->
+            <label>Category of Enquiry:</label>
+            <section class="check-box">
+                <label><input type="checkbox" name="category" value="To Join"> To Join</label><br/>
+                <label><input type="checkbox" name="category" value="Event Activities"> Event Activities</label><br/>
+                <label><input type="checkbox" name="category" value="Registration Fees"> Registration fees</label><br/>
+                <label><input type="checkbox" name="category" value="Rules & Guidelines"> Rules & Guidelines</label>
+            </section>
+            <section class="error" id="categoryError"></section>
+            <!-- Detail -->
+            <label for="details">Details Enquiry:</label>
+            <textarea id="details" name="details" placeholder="Type here....."></textarea>
+            <section class="error" id="detailsError"></section>
+            <!-- Button -->
+            <section class="btn-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-cancel">Cancel</button>
+            </section>
+        </form>
+        
+   </main>
+   <script src="inquiry-form.js"></script>
+</body>
+</html>
